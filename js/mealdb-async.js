@@ -5,10 +5,12 @@ const searchFood = () => {
     searchField.value = '';
     const url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${searchText}`;
 
-    // console.log(url);
-    fetch(url)
-        .then(res => res.json())
-        .then(data => displaySearchResult(data.meals));
+    // fetch(url)
+    //     .then(res => res.json())
+    //     .then(data => displaySearchResult(data.meals));
+    const res = await fetch(url);
+    const data = await res.json();
+    displaySearchResult(data.meals);
 }
 
 const displaySearchResult = (meals) => {
