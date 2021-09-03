@@ -1,0 +1,36 @@
+h1{
+    text-align: center;
+    color: aqua;
+    font-size: 40px;
+    text-decoration: underline;
+    margin-bottom: 0;
+}
+p{
+    text-align: center;
+    color:black;
+    font-size: 18px;
+}
+.countries{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.country{
+    background-color:aqua;
+    border: 2px solid tomato;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+.country-detail{
+    background-color:chocolate;
+    color: #fff;
+    border: 1px solid aqua;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+.country-detail img{
+    width: 150px;
+}
